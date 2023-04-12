@@ -13,10 +13,10 @@ class Finter:
         self.__isracard_report = IsracardReport()
 
     def run(self):
-        leumi_osh = self.__leumi_report.extract_osh("/Users/settinger/Downloads/pdfs/BankLeumi 12_4_2023 (1).pdf")
+        leumi_osh = self.__leumi_report.extract_osh("*")
         print(f'DATE VALUE_DATE DESCRIPTION REFERENCE IN_DEBT IN_CLEAR BALANCE')
         print(leumi_osh)
-        # isracard = self.__isracard_report.extract_osh("/Users/settinger/Downloads/pdfs/Export_7_04_2023.pdf")
+        # isracard = self.__isracard_report.extract_osh("*")
         # print('DATE VALUE_DATE DESCRIPTION REFERENCE IN_DEBT IN_CLEAR BALANCE')
         # print(isracard)
 
